@@ -1,0 +1,4 @@
+Use case: Choisir le niveau
+Acteur: l'utilisateur
+Scenario: Aller dans le menu, selecter le niveau desire, le niveau se charge pour etre joue.
+Exception: Le niveau ne peut pas se charger.
