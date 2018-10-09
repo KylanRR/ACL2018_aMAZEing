@@ -10,6 +10,6 @@ Date: 09/10/2018
 
 Acteur concernées: Monstres 
 
-Pré-condition: Déplacement du Héros 
+Pré-condition: Labyrinthe généré 
 
 Post-condition: Déplacement possible des monstres dans le labyrinthe. L’interaction avec les Héros 
