@@ -1,4 +1,8 @@
+Auteur: Ailin SEIT AMET 
+Date : 08/10/2018
 Use case: Choisir le niveau
-Acteur: l'utilisateur
-Scenario: Aller dans le menu, selecter le niveau desire, le niveau se charge pour etre joue.
+Acteur concerné: l'utilisateur
+Objectif: charger le jeu d'un niveau selectioné
+Pré-condition : Le niveau desiré a été debloqué
+Scenario: L'utilisateur va dans le menu, click sur le boutton "Selecter niveau", il selectionne le niveau desiré, le niveau se charge pour etre joué.
 Exception: Le niveau ne peut pas se charger.
