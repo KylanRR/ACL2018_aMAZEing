@@ -6,3 +6,15 @@ Date de création : 09/10/18
 Acteurs concernés : Monstres
 Pre-condition : Labyrinthe généré, monstre placés
 Post-condition : Monstres repèrent le héros
+
+Scénario nominal :
+*Si le monstre peut se déplacer dans cette direction
+*le monstre se déplace dans cette direction
+Scénario alternatif : 
+*Le personnage ne peut pas se déplacer dans cette direction --> rien ne 
+doit se passer
+*Le monstre veut aller sur la case d'un mur
+*Si le monstre n'est pas un fantome --> rien ne doit se passer
+Scénario exceptionnel :
+*Si deux monstres se déplacent sur la même case --> rien ne doit se 
+passer
