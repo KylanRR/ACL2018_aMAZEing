@@ -7,3 +7,18 @@ Date : 08/10/2018
 Acteur concernés : Héros.
 Pré-condition : Labyrinthe généré/Héros placé.
 Post-condition : Déplacement possible
+
+Scénario nominal : 
+*L'utilisateur appuie sur une des touches directionnelles
+*Si le personnage peut eventuellement se déplacer dans cette direction
+*le personnage se déplace dans cette direction
+Scénario alternatif:
+*Le personnage ne peut pas se déplacer dans cette direction --> rien ne 
+doit se passer
+*Le personnage veut aller sur la case d'un mur --> rien ne doit se 
+passer
+Scénario exceptionnel:
+*L'utilisateur appuie sur plusieures touches directionnelles à la fois 
+--> rien ne doit se passer
+*L'utilisateur appuie sur une ou plusieures touches qui n'est ou ne sont 
+pas directionnelles --> rien ne doit se passer
