@@ -7,21 +7,23 @@ fonctionnalité à choisir dans la liste suivante
 
 Fonctionnalités :
 
-[1][TODO]Créer un labyrinthe par défaut.
-[1][TODO]Placer un héros dans le labyrinthe.
-[1][TODO]Permettre au héros de se déplacer dans le labyrinthe.
-[1][TODO]Générer le labyrinthe à partir d'un fichier.
-[2][TODO]Permettre un choix de difficulté qui adapte le fichier de 
+[1][TODO]Le labyrinthe est généré par défaut.
+[1][TODO]Le héros doit être placé dans le labyrinthe.
+[1][TODO]Le héros doit pouvoir se déplacer dans le labyrinthe.
+[1][TODO]Le labyrinthe doit être généré à partir d'un fichier.
+[2][TODO]Il existe un choix de difficulté qui adapte le fichier de 
 labyrinthe choisi.
-[2][TODO]Générer des monstres dans le labyrinthe.
-[2][TODO]Faire se déplacer les monstres de manière aléatoire.
-[2][TODO]Créer une case "trésor", ou si le joueur arrive il gagne.
+[2][TODO]des monstres sont placés de manière aléatoire dans le 
+labyrinthe.
+[2][TODO]Les monstres se déplacent de manière aléatoire.
+[2][TODO]Une case "trésor" doit exister, ou si le joueur arrive il 
+gagne.
 [2][TODO]Le Héros doit mourir en cas d'un certain nombres de contact 
 avec les monstres.
 [3][TODO]Le Héros peut attaquer les monstres sur la même case (ils 
 prennent tout deux des dégats).
 [3][TODO]Le héros peut attaquer les monstres sur la case adjacente.
-[3][TODO]Créer des cases du labyrinthes spéciales :
+[3][TODO]Certaines cases du labyrinthes ont des effets particuliers :
 -Pieges : le héros subit des dégats
 -Magiques : quand le joueur marche dessus un effet est déclenché
 -Passages : quand le joueur arrive sur la case il est téléporté quelque 
@@ -36,6 +38,6 @@ plusieures fois.
 de difficulté supérieur.
 [5][TODO]Les fantômes sont des monstres qui peuvent traverser les murs.
 [5][TODO]Certaines cases spéciales du labyrinthe sont invisibles.
-[5][TODO]Répartir des items sur le labyrinthe que le héros peut ramasser 
-pour augmenter ses dégats ou sa vie.
+[5][TODO]Des items sont répartis aléatoirement sur le labyrinthe et 
+le héros peut les ramasser pour augmenter ses dégats ou sa vie.
 
