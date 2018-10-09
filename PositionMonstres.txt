@@ -1,0 +1,15 @@
+Titre: Position des monstres 
+
+Résumé: Les monstres sont de différentes types et ils essayent d’attaquer le personnage. Ils sont placés de maniere aléatoire dans le labyrinthe. 
+
+Auteur: Cristiana PETREACA 
+
+Responsable: 
+
+Date: 09/10/2018
+
+Acteur concernées: Monstres 
+
+Pré-condition: Déplacement du Héros 
+
+Post-condition: Déplacement possible des monstres dans le labyrinthe. L’interaction avec les Héros 
