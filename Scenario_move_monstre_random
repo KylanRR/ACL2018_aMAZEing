@@ -1,8 +1,0 @@
-Titre : Déplacements aléatoires monstres
-Résumé : Les monstres se déplacent de manière aléatoire tant qu'ils n'ont pas repéré le héros
-Auteur : Kylan
-Responsable :
-Date de création : 09/10/18
-Acteurs concernés : Monstres
-Pre-condition : Labyrinthe généré, monstre placés
-Post-condition : Monstres repèrent le héros
