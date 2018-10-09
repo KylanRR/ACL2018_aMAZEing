@@ -1,0 +1,41 @@
+Backlog du Projet
+Devant chaque fonctionnalité est assigné un numéro, il correspond à 
+l'ordre de priorité de la fonctionnalité [1] étant le plus prioritaire.
+De plus devant chaque fonctionnalité il y aura l'état d'avancement de la 
+fonctionnalité à choisir dans la liste suivante 
+([TODO],[DONE],[INPROGRESS],[BUG]).
+
+Fonctionnalités :
+
+[1][TODO]Créer un labyrinthe par défaut.
+[1][TODO]Placer un héros dans le labyrinthe.
+[1][TODO]Permettre au héros de se déplacer dans le labyrinthe.
+[1][TODO]Générer le labyrinthe à partir d'un fichier.
+[2][TODO]Permettre un choix de difficulté qui adapte le fichier de 
+labyrinthe choisi.
+[2][TODO]Générer des monstres dans le labyrinthe.
+[2][TODO]Faire se déplacer les monstres de manière aléatoire.
+[2][TODO]Créer une case "trésor", ou si le joueur arrive il gagne.
+[2][TODO]Le Héros doit mourir en cas d'un certain nombres de contact 
+avec les monstres.
+[3][TODO]Le Héros peut attaquer les monstres sur la même case (ils 
+prennent tout deux des dégats).
+[3][TODO]Le héros peut attaquer les monstres sur la case adjacente.
+[3][TODO]Créer des cases du labyrinthes spéciales :
+-Pieges : le héros subit des dégats
+-Magiques : quand le joueur marche dessus un effet est déclenché
+-Passages : quand le joueur arrive sur la case il est téléporté quelque 
+part dans le labyrinthe
+-Soins : Quand le joueur arrive sur la case, il récupére tout ses points 
+de vie.
+[4][TODO]Les monstres se déplacent de manière intelligente en essayant 
+d'attraper le héros.
+[4][TODO]Le héros peut casser les murs du labyrinthe en les tapant 
+plusieures fois.
+[4][TODO]Quand le héros arrive sur la case de victoire passer au niveau 
+de difficulté supérieur.
+[5][TODO]Les fantômes sont des monstres qui peuvent traverser les murs.
+[5][TODO]Certaines cases spéciales du labyrinthe sont invisibles.
+[5][TODO]Répartir des items sur le labyrinthe que le héros peut ramasser 
+pour augmenter ses dégats ou sa vie.
+
