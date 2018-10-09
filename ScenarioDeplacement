@@ -1,0 +1,9 @@
+Titre : Déplacement du Héros
+Résumé : Le Héros se déplace suivant la volonté du joueur sur le 
+labyrinthe, il ne peut être sur la même case que les murs.
+Auteur: Grégoire CLOUVEL
+Responsable : 
+Date : 08/10/2018
+Acteur concernés : Héros.
+Pré-condition : Labyrinthe généré/Héros placé.
+Post-condition : Déplacement possible
