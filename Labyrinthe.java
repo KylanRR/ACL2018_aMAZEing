@@ -111,11 +111,11 @@ public class Labyrinthe extends JPanel{
 				for (int j = 0; j < grille[0].length; ++j) {
 						
 					if (grille[i][j] == 0)  
-						//Image de fond blanc
+						//Image de fond herbe
 						button[i][j] = new JButton(caseVide);
 					
 					else 
-						//Image de fond noir
+						//Image de fond mur
 						button[i][j] = new JButton(caseMur);
 				
 					button[i][j].setPreferredSize(dim);
@@ -126,57 +126,9 @@ public class Labyrinthe extends JPanel{
 		      
 			this.add(panel);
 			
-		} //Fin creerLab()
+		} 
 		
-	/************************************** ALGORITHME DE RESOLUTION *************************************/
-	
-		public boolean resolutionLab(int pos_x, int pos_y) {
-			 
-				boolean done = false;
-			
-				//Si la fonction estValide() renvoie true
-				if (estValide(pos_x, pos_y)) {
-					
-					grille[pos_x][pos_y] = 3;
-					
-					//Si la case passée en paramètre est la dernière case du labyrinthe
-					if (pos_x == grille.length-1 && pos_y == grille[0].length-1)
-						return true;
-					
-					else {
-						//Appels récursifs
-						done = resolutionLab(pos_x + 1, pos_y);
-						if (!done)
-							done = resolutionLab(pos_x, pos_y + 1);
-						if (!done)
-							done = resolutionLab(pos_x - 1, pos_y);
-						if (!done)
-							done = resolutionLab(pos_x, pos_y - 1);
-					}
-					if (done) 
-			            		grille[pos_x][pos_y] = 7;
-			     
-				}
-				
-			return done;
-
-		} //Fin resolutionLab()
-		
-		private boolean estValide(int pos_x, int pos_y) {
-			
-			boolean result = false;
-			 
-		      //Si la case passée en paramètre est dans les dimensions du labyrinthe
-		      if (pos_x >= 0 && pos_x < grille.length && pos_y >= 0 && pos_y < grille[0].length)
-		    	 //Et si la case est un espace vide
-		         if (grille[pos_x][pos_y] == 0)
-		            result = true;
-
-		      return result;
-
-		} //Fin estValide()
-	
-} //Fin class
+}
 
 
 
