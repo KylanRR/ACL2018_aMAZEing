@@ -1,13 +1,13 @@
 
-public class Teleportation extends Tresor{
+public class Soin extends Tresor{
 	
 	public int idCase;
 	public int coordX;
 	public int coordY;
 	
-	public Teleportation(int x, int y) {
+	public Soin(int x, int y) {
 		super(x, y);
-		this.idCase = 5;
+		this.idCase = 6;
 	}
 	
 	public boolean activation(int posXHero,int posYHero) {
@@ -16,5 +16,4 @@ public class Teleportation extends Tresor{
 		}
 		return false;
 	}
-
 }

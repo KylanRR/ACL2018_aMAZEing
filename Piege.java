@@ -1,6 +1,7 @@
 
 public class Piege extends Tresor{
 	
+	public int idCase;
 	public int coordX;
 	public int coordY;
 	
@@ -9,7 +10,11 @@ public class Piege extends Tresor{
 		this.idCase = 4;
 	}
 	
+	public boolean activation(int posXHero,int posYHero) {
+		if (posXHero == coordX && posYHero == coordY) {
+			return true;
+		}
+		return false;
+	}
 	
-	
-
 }
