@@ -1,5 +1,5 @@
 
-public class Tresor {
+public class Tresor extends Case {
 
 	public int idCase;
 	public int coordX;
