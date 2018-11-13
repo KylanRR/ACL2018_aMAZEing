@@ -6,6 +6,10 @@ import java.util.function.BooleanSupplier;
 
 
 public class Monstres extends Entite{
+	int velX=0, velY=0;
+	int speed=5;
+	Random rand = new Random(); 
+	int position = rand.nextInt(4);
 
     public Monstres(int posx, int posy, int nbDegats, int vieActuelle, int vieMax) {
         super(posx, posy, nbDegats, vieActuelle, vieMax);
@@ -22,10 +26,40 @@ public class Monstres extends Entite{
         return i.getImage();
     } 
     
-    public void update(){
-            posx+=Math.random();
-            posy+=Math.random();    
+    public static int getRandom(int[] array) {
+	    int rnd = new Random().nextInt(array.length);
+	    return array[rnd];
+	}
+    
+    public void randommovement(){
+    	int[] randomArr= {-1,1}; 
+
+           velX+= speed*getRandom(randomArr); 
+           velY+= speed*getRandom(randomArr); 
     }
+    
+    public boolean checkrandom(int posXMonstre,int posYMonstre) {
+		if (posXMonstre==velX && posYMonstre==velY) {
+			return true;
+		}
+		return false;
+	}
+    
+    public void update() { 
+		posy+=velY;
+		posx+=velX;
+		
+		checkCollisions();
+	}
+    
+    
+    public boolean checkupdate(int posXMonstre,int posYMonstre) {
+		if (posXMonstre==posx && posYMonstre==posy) {
+			return true;
+		}
+		return false;
+	}
+    
     
     int coordX2, coordY2;
 	public boolean checkCollisions(int posxMonstre,int posyMonstre) {
