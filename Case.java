@@ -11,8 +11,6 @@ public abstract class Case {
 		this.y = y;
 	}
 	
-	public abstract void dessiner(Graphics2D g);
-	
 	public boolean isSolid() {
 		return !traversable;
 	}

@@ -1,14 +1,13 @@
 
-public class Tresor extends Case {
+public class Tresor extends Case{
 
 	public int idCase;
 	public int coordX;
 	public int coordY;
 	
 	public Tresor(int x,int y) {
+		super(x, y);
 		this.idCase = 3;
-		this.coordX = x;
-		this.coordY = y;
 	}
 	
 	public boolean activation(int posXHero,int posYHero) {

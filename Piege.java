@@ -17,4 +17,11 @@ public class Piege extends Case{
 		return false;
 	}
 	
+	public int degatsPiege(int pvHero,int posXHero,int posYHero) {
+		if (activation(posXHero, posYHero)) {
+			pvHero -= 20; 
+		}
+		return 	pvHero;
+	}
+	
 }
