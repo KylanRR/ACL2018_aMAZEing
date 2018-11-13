@@ -1,5 +1,5 @@
 
-public class Teleportation extends Tresor{
+public class Teleportation extends Case{
 	
 	public int idCase;
 	public int coordX;
