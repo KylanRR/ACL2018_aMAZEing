@@ -1,5 +1,5 @@
 
-public class Soin extends Tresor{
+public class Soin extends Case {
 	
 	public int idCase;
 	public int coordX;
