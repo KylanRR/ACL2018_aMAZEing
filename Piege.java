@@ -1,5 +1,5 @@
 
-public class Piege extends Tresor{
+public class Piege extends Case{
 	
 	public int idCase;
 	public int coordX;
