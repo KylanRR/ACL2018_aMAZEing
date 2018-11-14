@@ -101,5 +101,12 @@ public class Heros extends Entite {
         	}
         	
         	}
+	
+	 public int attack(int vieActuelleMonstre) { 
+    		if(checkCollisions()==true) {
+    			vieActuelleMonstre=vieActuelleMonstre-30;	
+    		}
+    		return vieActuelleMonstre;
+    	}     
     
 }
