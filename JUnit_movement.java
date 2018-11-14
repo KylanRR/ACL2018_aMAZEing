@@ -20,7 +20,6 @@ class JUnit_movement {
 
 	@Test
 	void testdeplacementheros() {
-		heros.update();
 		assertTrue(heros.checkupdate(1,2));	
 	}
 
