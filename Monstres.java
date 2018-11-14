@@ -20,11 +20,40 @@ public class Monstres extends Entite{
     	super(posx, posy);
     }
     
-    public int getPositionX () {
-    	return posx;
+     public int getPosx() {
+        return posx;
     }
-    public int getPositionY () {
-    	return posy;
+
+    public void setPosx(int posx) {
+        this.posx = posx;
+    }
+    public int getPosy() {
+        return posy;
+    }
+
+    public void setPosy(int posy) {
+        this.posy = posy;
+    }
+    public int getNbDegats() {
+        return nbDegats;
+    }
+
+    public void setNbDegats(int nbDegats) {
+        this.nbDegats = nbDegats;
+    }
+    public int getVieActuelle() {
+        return vieActuelle;
+    }
+
+    public void setVieActuelle(int vieActuelle) {
+        this.vieActuelle = vieActuelle;
+    }
+    public int getVieMax() {
+        return vieMax;
+    }
+
+    public void setVieMax(int vieMax) {
+        this.vieMax = vieMax;
     }
     public void draw(Graphics2D g2d){
         g2d.drawImage(getMonstresImg(),posx, posy, null);
