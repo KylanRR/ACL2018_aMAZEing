@@ -1,12 +1,7 @@
 import static org.junit.jupiter.api.Assertions.*;
-
-import java.awt.Robot;
-import java.awt.event.KeyEvent;
-
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
 import org.junit.jupiter.api.Test;
 
 class JUnit_movement {
@@ -36,7 +31,5 @@ class JUnit_movement {
 	@Test
 	void testdeplacementaleatoiremonstres() {
 		assertTrue(monstre.checkrandom(10,2));
-	}
-	
-	
+	}	
 }
