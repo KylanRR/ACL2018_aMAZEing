@@ -35,4 +35,5 @@ class JUnit_movement {
 	@Test
 	void testattack() {
 		assertEquals(heros.attack(100),70);
+	}
 }
