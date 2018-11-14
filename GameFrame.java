@@ -13,7 +13,7 @@ import javax.swing.Timer;
 
 public class GameFrame extends JPanel implements ActionListener {
 	Timer mainTimer;
-	Player player; 
+	Heros heros; 
 	
 	int MonstreCount=5;
 	
@@ -23,8 +23,8 @@ public class GameFrame extends JPanel implements ActionListener {
 	public GameFrame() {  
 		setFocusable(true);
 		
-		player=new Player(100,00);
-		addKeyListener(new KeyAdapt(player));
+		heros=new Heros(100,00);
+		addKeyListener(new KeyAdapt(heros));
 		
 		mainTimer=new Timer(10, this);
 		mainTimer.start();
@@ -40,7 +40,7 @@ public class GameFrame extends JPanel implements ActionListener {
 		super.paint(g);
 		Graphics2D g2d=(Graphics2D) g;
 		
-		player.draw(g2d);
+		heros.draw(g2d);
 		
 		Monstre m=new Monstre(200,400);  
 		m.draw(g2d);
@@ -50,8 +50,8 @@ public class GameFrame extends JPanel implements ActionListener {
 		}
 	}
 	
-	public void actionPerformed(ActionEvent arg0) {
-		player.update();
+	public void deplacementheros(){
+		heros.update();
 		repaint();
 	}
 	
