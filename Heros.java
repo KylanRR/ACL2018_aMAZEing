@@ -26,16 +26,8 @@ public class Heros extends Entite {
 		return false;
 	}
 	
-    public void update() { 
-		posy+=velY;
-		posx+=velX;
-		
-		checkCollisions();
-	}
-	
 	public void draw(Graphics2D g2d) {
-		g2d.drawImage(getHerosImg(), posx, posy, null);
-		
+		g2d.drawImage(getHerosImg(), posx, posy, null);	
 	}
 	
 	public Image getHerosImg() {
@@ -71,6 +63,21 @@ public class Heros extends Entite {
 		}
 		
 	}
+	
+	public void update() { 
+		posy+=velY;
+		posx+=velX;
+		
+		checkCollisions();
+	}
+	
+	public boolean checkupdate(int posXHero,int posYHero) {
+    		if (posXHero==posx && posYHero==posy) {
+    			return true;
+    		}
+    		return false;
+    	}
+	
         public Rectangle getBounds() {
             return new Rectangle(posx,posy,getHerosImg().getWidth(null), getHerosImg().getHeight(null));	
 	}
