@@ -30,5 +30,9 @@ class JUnit_movement {
 	@Test
 	void testdeplacementaleatoiremonstres() {
 		assertTrue(monstre.checkrandom(10,2));
-	}	
+	}
+	
+	@Test
+	void testattack() {
+		assertEquals(heros.attack(100),70);
 }
