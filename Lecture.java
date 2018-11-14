@@ -17,17 +17,17 @@ public class Lecture {
 	public static void main(String[] arguments) {
 		FileReader monFichier = null;
 		BufferedReader tampon = null;
-	
+		String fichier = "Laby1.txt";// Dans le code du choix on retournera fichier
 
 		try {
-			monFichier = new FileReader("C:\\Laby1.txt");
+			monFichier = new FileReader(fichier);
 			tampon = new BufferedReader(monFichier);
 			Scanner sc = null;
 
 			try {
-				sc = new Scanner(new File("C:\\Laby1.txt"));
+				sc = new Scanner(new File(fichier));
 			} catch (FileNotFoundException e) {
-				System.out.println("le fichier " + "C:\\Laby1.txt" + "n'est pas valable");
+				System.out.println("le fichier " + fichier + "n'est pas valable");
 				e.printStackTrace();
 			}
 			int nbl = 0;
