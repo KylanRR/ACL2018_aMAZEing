@@ -5,6 +5,11 @@ import java.awt.event.KeyListener;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Random;
+import java.util.Scanner;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.io.BufferedWriter;
 
 import utilensemjava.Lecture;
 
@@ -57,7 +62,29 @@ public class MoteurDeJeu extends JFrame {
 	
 	public static void main(String[] args) throws IOException {
 		
-		int niveau = Lecture.lireEntier("Quel niveau ? : ");
+		boolean b = false;
+		// TODO Auto-generated method stub
+		Scanner sc = new Scanner(System.in);
+		while (b==false || !sc.hasNextInt()){
+			try{
+				System.out.println("Veuillez saisir le niveau du labyrinthe (1 à 3) :");
+				int choixniveau = sc.nextInt();
+				if (choixniveau == 1 || choixniveau == 2 || choixniveau == 3 ) {
+					System.out.println("Vous avez saisi le niveau : " + choixniveau);
+					b=true; 
+				}
+				else {					
+					System.out.println("Choix Impossible.");
+					sc = new Scanner(System.in);
+				}
+			}
+			catch(java.util.InputMismatchException e){
+				System.out.println("Chiffre demandé");
+				sc = new Scanner(System.in);
+				continue;				
+			}
+		}
+	
 		MoteurDeJeu fenetre = new MoteurDeJeu(niveau);
 		fenetre.setLocationRelativeTo(null);
 		fenetre.setVisible(true);
