@@ -21,7 +21,9 @@ public class MoteurDeJeu extends JFrame {
 	private Labyrinthe labyrinthe;
 	public static Heros heros;
 	public static Monstre monstre;
+	public static Phantome phantome;
 	public ArrayList<Monstre> monstres;
+	public ArrayList<Phantome> phantomes;
 	Random rand=new Random();
 	
 	public MoteurDeJeu(int niveau_Labyrinthe) throws IOException {
@@ -48,14 +50,19 @@ public class MoteurDeJeu extends JFrame {
 		heros.draw(g2d);
 	
 		for(int i=0; i<monstres.size(); i++) {
-			monstres.get(i).paint(g);
-			
+			monstres.get(i).paint(g);	
 		}
+		for(int i=0; i<phantomes.size(); i++) {
+			phantomes.get(i).paint(g);	
+		}
+		
+		
 	}
 	
 	public void tick() {
 		heros.tick();
 		monstres.get(i).tick();
+		phantomes.get(i).tick();
 	}
 	
 	
@@ -67,7 +74,7 @@ public class MoteurDeJeu extends JFrame {
 		Scanner sc = new Scanner(System.in);
 		while (b==false || !sc.hasNextInt()){
 			try{
-				System.out.println("Veuillez saisir le niveau du labyrinthe (1 à 3) :");
+				System.out.println("Veuillez saisir le niveau du labyrinthe (1 a 3) :");
 				int choixniveau = sc.nextInt();
 				if (choixniveau == 1 || choixniveau == 2 || choixniveau == 3 ) {
 					System.out.println("Vous avez saisi le niveau : " + choixniveau);
@@ -79,7 +86,7 @@ public class MoteurDeJeu extends JFrame {
 				}
 			}
 			catch(java.util.InputMismatchException e){
-				System.out.println("Chiffre demandé");
+				System.out.println("Chiffre demande");
 				sc = new Scanner(System.in);
 				continue;				
 			}
@@ -93,4 +100,3 @@ public class MoteurDeJeu extends JFrame {
 	
 	
 } 
-
