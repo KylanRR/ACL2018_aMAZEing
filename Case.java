@@ -1,14 +1,14 @@
-import java.awt.Graphics2D;
-
 public abstract class Case {
 	
-	protected int x,y;
+	protected int idCase;
+	protected int coordX;
+	protected int coordY;
 	
 	protected boolean traversable;
 	
 	public Case(int x, int y) {
-		this.x = x;
-		this.y = y;
+		this.coordX = x;
+		this.coordY = y;
 	}
 	
 	public boolean isSolid() {

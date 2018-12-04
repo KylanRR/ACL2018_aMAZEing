@@ -1,11 +1,6 @@
-
 import java.util.Random;
 import java.awt.Graphics2D;
 import java.awt.Image;
-import java.awt.event.ActionEvent;
-import java.util.Random;
-import java.util.function.BooleanSupplier;
-
 import javax.swing.ImageIcon;
 
 public class Monstre extends Entite{

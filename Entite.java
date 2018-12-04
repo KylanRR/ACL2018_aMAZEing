@@ -11,13 +11,13 @@ public class  Entite {
 	public int vieMax;
 	
 	
-	Monstres monstre=new Monstres(posx, posy);
+	Monstre monstre=new Monstre(posx, posy);
 	Heros hero=new Heros(posx, posy); 
 	Timer time;
 	boolean collisions=false;
 	
 	public Entite() {
-		monstre=new Monstres(5,10);
+		monstre=new Monstre(5,10);
 		hero=new Heros(4,9);
 		time=new Timer();
 		time.start();
@@ -88,10 +88,10 @@ public Entite(int posx, int posy, int nbDegats, int vieActuelle, int vieMax) {
     }
 	
 	public void collisions() {
-		 ArrayList<Monstres> monstres=GameFrame.getMonstreList();
+		 ArrayList<Monstre> monstres=GameFrame.getMonstreList();
 		 
 		 for(int i=0; i<monstres.size();i++) {
-			 Monstres tempMonstre=monstres.get(i);
+			 Monstre tempMonstre=monstres.get(i);
 			 if(getBounds().intersects(monstres.get(i).getBounds())) {
 				 GameFrame.removeMonstre(tempMonstre);
 			 }
@@ -100,15 +100,15 @@ public Entite(int posx, int posy, int nbDegats, int vieActuelle, int vieMax) {
 
 	
 	public boolean checkCollisions() {
-		Rectangle monstre=Monstres.getBounds();
+		Rectangle monstre=Monstre.getBounds();
 		Rectangle hero=Heros.getBounds();
 		if(hero.intersects(monstre)) {
 			collisions=true;
-		else 
-			collisions=false;
-			
 		}
-	}
+		else 
+			collisions=false;	
+		}
+	
 	private void repaint() {
 		// TODO Auto-generated method stub
 

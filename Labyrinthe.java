@@ -1,5 +1,4 @@
 import javax.swing.*;
-import utilensemjava.*;
 import java.awt.*;
 import java.io.BufferedReader;
 import java.io.File;
@@ -27,7 +26,8 @@ public class Labyrinthe extends JPanel{
 
 	public void creerLab(int niveau) throws IOException {
 		//Creation du labyrinthe a partir d'un fichier
-		String fichier = choixNiveau(niveau);
+		niveau = MoteurDeJeu.choixNiveau();
+		String fichier = generationNiveau(niveau);
 		String[] labyrinthe = lectureFichier(fichier).split("\n");
 		char[][] grille = new char[labyrinthe.length][labyrinthe[0].split("").length];
 		for (int i = 0; i < labyrinthe.length; i++){
@@ -70,7 +70,7 @@ public class Labyrinthe extends JPanel{
 		}
 	} 
 
-	private static String choixNiveau(int niveau) {
+	private static String generationNiveau(int niveau) {
 		String fichier;
 		if (niveau == 1) {
 			fichier = "Labyrinthe_niveau_1.txt";

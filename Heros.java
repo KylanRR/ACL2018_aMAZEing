@@ -1,7 +1,5 @@
-
 import java.awt.Graphics2D;
 import java.awt.Image;
-import java.util.ArrayList;
 import javax.swing.ImageIcon;
 
 
@@ -16,6 +14,14 @@ public class Heros extends Entite {
     public Heros(int posx, int posy) {
         super(posx, posy);
     }
+    
+    public void subirDegat(int nbDegats) {
+    	this.vieActuelle -= nbDegats;
+    }
+    
+    public boolean estVivant() {
+        return this.vieActuelle <= 0;
+    }
 	
     public Image getHerosImg() {
 		ImageIcon ic=new ImageIcon(new ImageIcon(getClass().getResource("/Heros.png")).getImage().getScaledInstance(35, 35, Image.SCALE_DEFAULT));
@@ -24,7 +30,6 @@ public class Heros extends Entite {
     
 	public void draw(Graphics2D g2d) {
 		g2d.drawImage(getHerosImg(), posx, posy, null);
-		
 	}
 	
 	public void tick() {
@@ -46,12 +51,6 @@ public class Heros extends Entite {
 			MoteurDeJeu.monstre.vieActuelle-=1;
 			MoteurDeJeu.heros.vieActuelle-=1;
 		}
-		
 	}
-	      
-
-		
+	     		
 }
-	
-    
-
